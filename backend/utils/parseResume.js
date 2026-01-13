@@ -1,5 +1,8 @@
-// func to parse uploaded resumé
-import pdf from "pdf-parse";
+
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const pdf = require("pdf-parse");
+
 import mammoth from "mammoth";
 import fs from "fs";
 

@@ -1,4 +1,3 @@
-// function to analyze resumé and print out a score
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);

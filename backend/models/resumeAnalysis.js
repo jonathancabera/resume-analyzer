@@ -1,4 +1,3 @@
-// model to store resumé analysis results
 import mongoose from "mongoose";
 
 const ResumeAnalysisSchema = new mongoose.Schema({

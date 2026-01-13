@@ -1,4 +1,3 @@
-// middleware function to upload resumé in chatbox
 import multer from "multer";
 
 const upload = multer({

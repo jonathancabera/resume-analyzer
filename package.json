@@ -12,10 +12,13 @@
   },
   "license": "MIT",
   "author": "Jonathan Cabera, Karina Solomon, Afnan Rahman, Mila Henson",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node backend/server/server.js",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "@google/genai": "^1.35.0",
@@ -29,5 +32,8 @@
     "openai": "^6.16.0",
     "pdf-parse": "^2.4.5",
     "react": "^19.2.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
